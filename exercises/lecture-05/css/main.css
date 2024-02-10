@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+div {
+  font-size: 1.6em;
+}
+
+span {
+  font-size: 1.6em;
+}
+
+ul {
+  list-style: square;
+}
