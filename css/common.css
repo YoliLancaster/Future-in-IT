@@ -10,11 +10,6 @@ footer {
   --fuuter-bg-color: #000;
 }
 
-html {
-  --primary-text-color: #000;
-  --primary-bg-color: #fff;
-}
-
 a:link,
 a:visited,
 a:link:active,
