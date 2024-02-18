@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 7 challenges</title>
+    <style>
+      .negative {
+        background: linear-gradient(
+          to left,
+          rgba(0, 0, 255, 1) -50%,
+          rgba(0, 0, 255, 0.9) -10%,
+          rgba(0, 0, 255, 0.7) 0%,
+          rgba(0, 0, 255, 0.7) 100%,
+          rgba(0, 0, 255, 0.5) 150%
+        );
+      }
+
+      .percents {
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 255, 0, 1) 2em,
+          rgba(0, 255, 0, 0.9) 4em,
+          rgba(0, 255, 0, 0.7) 8em,
+          rgba(0, 255, 0, 0.7) 16em,
+          rgba(0, 255, 0, 0.5) 32em,
+          rgba(0, 255, 0, 0.3) 64em,
+          rgba(0, 255, 0, 0) 128em
+        );
+      }
+
+      .radial {
+        background: radial-gradient(ellipse at top, orange, transparent),
+          radial-gradient(ellipse at bottom, red, transparent);
+      }
+    </style>
+  </head>
+  <body class="body">
+    <!-- TASK 1 -->
+    <h1>Gradient Text Glow</h1>
+
+    <div class="percents">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam
+      quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere
+      necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos
+      itaque!
+    </div>
+
+    <div class="negative">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam
+      quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere
+      necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos
+      itaque!
+    </div>
+
+    <div class="radial">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam
+      quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere
+      necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos
+      itaque!
+    </div>
+
+    <!-- TASK 2 -->
+    <!-- Прямокутник -->
+    <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+      <rect
+        x="20"
+        y="20"
+        width="100"
+        height="100"
+        stroke="#1c87c9"
+        stroke-width="4"
+        fill="lightgray" />
+    </svg>
+
+    <!-- Коло -->
+    <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+      <circle
+        cx="100"
+        cy="70"
+        r="60"
+        stroke="red"
+        stroke-width="4"
+        fill="lightgray" />
+    </svg>
+
+    <!-- Годинник -->
+    <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+      <circle
+        cx="150"
+        cy="150"
+        r="100"
+        stroke="black"
+        stroke-width="2"
+        fill="none" />
+      <line
+        x1="150"
+        y1="150"
+        x2="200"
+        y2="150"
+        stroke="black"
+        stroke-width="4"
+        transform="rotate(-25, 150, 150)" />
+      <line
+        x1="150"
+        y1="150"
+        x2="150"
+        y2="100"
+        stroke="black"
+        stroke-width="4"
+        transform="rotate(0, 150, 150)" />
+    </svg>
+
+    <!-- Зірка -->
+    <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+      <polygon
+        points="150,20 180,80 240,80 195,115 210,170 150,140 90,170 105,115 60,80 120,80"
+        fill="yellow" />
+    </svg>
+  </body>
+</html>
