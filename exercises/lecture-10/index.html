@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lesson 10 challenges</title>
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  <style>
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      width: 700px;
+      /*justify-content: space-between;*/
+    }
+
+    .item-blue {
+      background-color: blue;
+      flex-grow: 3;
+    }
+    .item-orange {
+      background-color:orange;
+    }
+    .item-green {
+      background-color:green;
+      flex-grow: 1;
+    }
+
+    .item {
+      color: white;
+      width: 100px;
+    }
+  </style>
+
+</head>
+<body>
+<h2>CSS Flex Property</h2>
+<div class="wrapper">
+  <div class="item item-blue">CSS</div>
+  <div class="item item-orange">Flex</div>
+  <div class="item item-green">Property</div>
+</div>
+</body>
+</html>
+
+<!-- TASK 1 -->
+<!--Ширина .item-blue складе 525px, оскільки він займає 3/4 ширини контейнера (тобто (3/4) * 700px = 525px), враховуючи властивість flex-grow: 3;.-->
+<!--Ширина .item-green складе 175px, оскільки він займає 1/4 ширини контейнера (тобто (1/4) * 700px = 175px), враховуючи властивість flex-grow: 1;.-->
+<!--Ширина .item-orange буде залежати від його вмісту і оформлення, оскільки для нього не задано властивості flex-grow.-->

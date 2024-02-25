@@ -1,0 +1,65 @@
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        'header header header'
+        'sidebar main main'
+        'footer footer footer';
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* Стилі для мобільних пристроїв (Mobile First) */
+.container {
+    width: 100%;
+}
+
+/* Стилі для мобільних пристроїв (Mobile First) */
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        'header'
+        'sidebar'
+        'main'
+        'footer';
+}
+
+/* Стилі для мобільних пристроїв (Mobile First) */
+.header,
+.main,
+.sidebar,
+.footer {
+    grid-area: unset;
+}
+
+/* Медіа-запит для екранів шириною більше або рівно 786px */
+@media screen and (min-width: 786px) {
+    .grid-container {
+        grid-template-areas:
+            'header header'
+            'sidebar main'
+            'footer footer';
+    }
+
+    .header,
+    .main,
+    .sidebar,
+    .footer {
+        grid-area: unset;
+    }
+}

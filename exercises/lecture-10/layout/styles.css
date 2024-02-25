@@ -1,0 +1,18 @@
+body {
+    --padding: 5vw;
+    --max-width: 180ch;
+}
+
+.flexbox {
+    --min: 30ch;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    min-width: var(--min);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
