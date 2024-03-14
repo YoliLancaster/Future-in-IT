@@ -3,7 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson _ challenges</title>
+    <title>Lesson 16 challenges</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Hello, javascript!</h1>
+
+    <!-- TASK 1 -->
+    <script>
+      let message1 = "Hello";
+      let message2 = "JavaScript";
+      alert(message1 + " " + message2);
+    </script>
+
+    <!-- TASK 2 -->
+    <script>
+      "use strict";
+      let message = "hello";
+      message = 123456;
+    </script>
+
+    <!-- TASK 3 -->
+    <script>
+      let x = prompt("Give the first number: ");
+      let y = prompt("Give the second number: ");
+      let sum = function (x, y) {
+        return parseInt(x) + parseInt(y);
+      };
+      alert(sum(x, y));
+    </script>
+
+    <!-- TASK 4 -->
+    <script>
+      "use strict";
+      let a = 9007199254740991;
+      let b = 9007199254740991n;
+      console.log(BigInt(a) + b); //тип явно приведений до BigInt
+      // Uncaught TypeError: can't convert BigInt to number
+    </script>
+
+    <!-- TASK 5 -->
+    <script>
+      "use strict";
+      let apples = "2";
+      let oranges = "3";
+      alert(parseInt(apples) + parseInt(oranges));
+    </script>
+
+    <!-- TASK 6 -->
+    <script>
+      "use strict";
+      let a = 1, //2
+        b = 1; //2
+      let c = ++a; // 2
+      let d = b++; // 1
+    </script>
+
+    <!-- TASK 7 -->
+    <script>
+      "use strict";
+      let a = 2;
+      let x = 1 + (a *= 2); // x=5, змінна а, після виконання обчислення х, набуває значення 4
+    </script>
+
+    <!-- TASK 8 -->
+    <script>
+      "use strict";
+      "" + 1 + 0; // 10
+      "" - 1 + 0; // -1
+      true + false; // true
+      6 / "3"; // 2
+      "2" * "3"; // 6
+      4 + 5 + "px"; // 9px
+      "$" + 4 + 5; // $45
+      "4" - 2; // 4
+      "4px" - 2; // NaN
+      "  -9  " + 5; // -9 5
+      "  -9  " - 5; // -14
+      null + 1; // 1
+      undefined + 1; // NaN
+      NaN + 1; // NaN
+    </script>
+
+    <!-- TASK 9 -->
+    <script>
+      "use strict";
+      // скоротити цей код за допомогою операторів += і *=:
+      let n = 2;
+      n += 5;
+      n *= 2;
+    </script>
+
+    <!-- TASK 10 -->
+    <script>
+      let n1 = "   123   ";
+      let n2 = "123z";
+      let n3 = true;
+      let n4 = false;
+      // Перетворити змінні n1, n2, n3, n4 на числа
+      n1 = parseInt(n1.trim());
+      n2 = parseInt(n2);
+      n3 = Number(n3);
+      n4 = Number(n4);
+      console.log(n1, n2, n3, n4);
+    </script>
+  </body>
 </html>
