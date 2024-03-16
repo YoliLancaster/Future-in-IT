@@ -5,5 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson 17 challenges</title>
   </head>
-  <body></body>
+  <body>
+    <!-- TASK 1 -->
+    <script>
+      let x = 3;
+      let y = 4;
+
+      x == 3; // true, x дорівнює 3
+      x === "3"; // false, тут строге порівняння x це число 3, а "3" це рядок
+      x != 5; // true, x не є 5
+      x !== "5"; // true, x це число 3, а "5" це строка
+      X !== 3; // якщо Х як велика літера, то ReferenceError: X is not defined, бо таку не оголошували
+      y > 5; // false
+      y >= 3; // true
+      y < 5; // true
+      y <= 2; // false
+      1 == true; // true
+      null == undefined; // true
+      NaN == NaN; // false
+    </script>
+
+    <!-- TASK 2 -->
+    <script>
+      let x = 3;
+      let y = 4;
+      let z = 5;
+
+      x ||= y;
+      x || (y = z);
+      x &&= y;
+      x && (y = z);
+      x ??= y;
+      x ?? (y = z);
+      //x залишається 3 в кожному випадку.
+      //Змінні y і z залишаються 4 і 5 відповідно, так як не були змінені жодним з операторів присвоєння.
+    </script>
+
+    <!-- TASK 3 -->
+    <script>
+      let q = prompt("Guess the number: ");
+      if (q == 3) {
+        alert("Congratulations, You did it!");
+      } else if (q > 3) {
+        alert("The number is too long");
+      } else {
+        alert("The number is short");
+      }
+    </script>
+
+    <!-- TASK 4 -->
+    <script>
+      let day = prompt("What is the day today? ");
+      if (day.toLowerCase().trim() === "friday") {
+        alert("End of the work week!");
+      } else if (day.toLowerCase().trim() === "monday") {
+        alert("Start of the work week!");
+      } else {
+        alert("A regular day");
+      }
+    </script>
+
+    <!-- TASK 4.2 -->
+    <script>
+      let dayInCase = prompt("What is the day today? ");
+      switch (day.toLowerCase().trim()) {
+        case "friday":
+          alert("End of the work week!");
+          break;
+        case "monday":
+          alert("Start of the work week!");
+          break;
+        default:
+          alert("A regular day");
+      }
+    </script>
+    <!-- TASK 5 -->
+    <script>
+      let score1 = prompt("Enter the student's score: ");
+      let grade1;
+      if (score1 < 50) {
+        grade1 = "F";
+      } else if (score1 < 70) {
+        grade1 = "D";
+      } else if (score1 < 80) {
+        grade1 = "C";
+      } else if (score1 < 90) {
+        grade1 = "B";
+      } else {
+        grade1 = "A";
+      }
+      alert(`Student's grade: ${grade}`);
+    </script>
+    <!-- TASK 5.2 -->
+    <script>
+      let score2;
+      let grade2;
+      let score = prompt("Enter the student's score: ");
+      let grade =
+        score < 50
+          ? "F"
+          : score < 70
+          ? "D"
+          : score < 80
+          ? "C"
+          : score < 90
+          ? "B"
+          : "A";
+
+      alert(`Student's grade: ${grade}`);
+    </script>
+    <!-- TASK 6 -->
+    <script>
+      let firstName = null;
+      let lastName = undefined;
+      let username = (firstName || lastName) ?? "Guest";
+
+      console.log(username); // "Guest"
+    </script>
+  </body>
 </html>
