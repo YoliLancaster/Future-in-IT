@@ -3,13 +3,18 @@ let person = {
   name: "Jackie",
   age: 30,
 };
+console.log(person.name, person.age);
 
 // TASK 2
-person.name = {
-  firstName: "Jackie",
-  lastName: "Herring",
+const person1 = {
+  name: {
+    firstName: "James",
+    lastName: "Bond",
+  },
+  age: 32,
 };
-console.log(JSON.stringify(person));
+console.log(person1.name.firstName, person1.name.lastName, person1.age);
+console.log(JSON.stringify(person1));
 
 // TASK 3
 person.bio = function () {
@@ -33,8 +38,8 @@ function createPerson(name) {
   };
 }
 
-let person1 = createPerson("Alice");
-let person2 = createPerson("Bob");
+let person3 = createPerson("Alice");
+let person4 = createPerson("Bob");
 
 // TASK 6 функція-конструктор
 //Створити функцію-конструктор Person, що приймає аргумент name та повертає новий об'єкт з властивістю name та методом introduceSelf. Створити за допомогою Person 2 екземпляри об'єкта mary та tom.
@@ -45,8 +50,8 @@ function Person(name) {
   };
 }
 
-let person3 = new Person("Mary");
-let person4 = new Person("Tom");
+let person5 = new Person("Mary");
+let person6 = new Person("Tom");
 
 person3.introduceSelf();
 person4.introduceSelf();
