@@ -1,0 +1,10 @@
+#errorMessages {
+  padding-top: 15px;
+  color: red;
+}
+
+#successMessages {
+  padding-top: 15px;
+  color: green;
+  font-weight: bold;
+}
